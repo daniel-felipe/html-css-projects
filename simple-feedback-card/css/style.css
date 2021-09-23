@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --btn-blue: #232359;
+    --bg-white: #E3E3F3;
+    --card-color: #F1F1F1F1;
+    --card-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+    --selected-color: #ACACFC;
+    --font-color: #222222;
+    --close-red: rgb(255, 68, 68);
+}
+
+.selected {
+    color: var(--selected-color);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--bg-white);
+}
+
+.card-container .card {
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--card-color);
+    box-shadow: var(--card-shadow);
+    position: relative;
+}
+
+.card h2 {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.card .close {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: .8rem;
+    top: .8rem;
+    transition: .3s;
+}
+
+.card .close:hover {
+    color: var(--close-red);
+    transition: .3s;
+}
+
+.card .eval-container {
+    width: 100%;
+    padding: .4rem .7rem;
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card a {
+    color: var(--font-color);
+}
+
+.text-container {
+    height: auto;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.text-container textarea {
+    width: 100%;
+    height: 5rem;
+    border: none;
+    resize: none;
+    padding: .5rem;
+}
+
+.text-container button {
+    border: none;
+    padding: .8rem 1.2rem;
+    margin-top: .5rem;
+    background-color: var(--btn-blue);
+    color: var(--card-color);
+    border-radius: .4rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: block;
+    position: absolute;
+    right: 0;
+}

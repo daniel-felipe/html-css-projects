@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Add Item</title>
+</head>
+<body>
+    <main>
+        <div class="add-item-container">
+            <h2>Add new item</h2>
+            <form action="">
+                <div class="field">
+                    <label for="item-type">What kind of item would you like to add?</label>
+                    <div>
+                        <input type="radio" name="item-type" id="item-type">Service
+                        <input type="radio" name="item-type" id="item-type" checked>Product
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="">Name*</label>
+                    <input type="text" name="name" id="name" placeholder="Eg. Business Consulting">
+                </div>
+                <div class="field">
+                    <label for="descri">Description</label>
+                    <textarea name="descri" id="descri" placeholder="Describe your product"></textarea>
+                </div>
+                <div class="field">
+                    <label for="price">Price*</label>
+                    <input type="text" name="price" id="price" placeholder="Enter amount">
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn cancel">Cancel</button>
+                    <button class="btn add">Add item</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

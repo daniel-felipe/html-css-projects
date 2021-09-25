@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --dark-blue: #171E39; 
+    --white: #FFFFFF;
+    --bg-color: #E3EBFB;
+    --gray: #ACACAE;
+    --gray-light: #acacae8c;
+    --gray-dark: #747474;
+    --shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
+
+.add-item-container {
+    width: 100%;
+    max-width: 470px;
+    /* height: 560px; */
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    background-color: var(--white);
+    font-weight: 500;
+}
+
+.add-item-container h2 {
+    margin-bottom: 2rem;
+}
+
+form input[type="radio"] {
+    margin-right: .5rem;
+    transform: scale(1.5);
+    background-color: black;
+}
+
+form input[type="radio"]:nth-of-type(2) {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+form .field {
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+}
+
+form label {
+    margin-bottom: 2rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form input[type="text"] {
+    width: 100%;
+    height: 3rem;
+    padding-left: .8rem;
+    border-radius: 4px;
+    border: 1px solid var(--gray-light);
+    color: var(--gray-dark);
+}
+
+form textarea {
+    width: 100%;
+    height: 5rem;
+    resize: none;
+    padding: .8rem;
+    border-radius: 4px;
+    border: 1px solid var(--gray-light);
+}
+
+.btn-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    align-content: center;
+}
+
+.btn {
+    width: 99%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    align-self: right;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+.add {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}

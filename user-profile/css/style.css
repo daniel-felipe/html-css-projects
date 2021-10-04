@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.user-profile {
+    width: 420px;
+    height: 420px;
+    border-radius: 16px;
+    padding: 2rem;
+    display: inherit;
+    grid-template-rows: auto auto auto;
+}
+
+.img {
+    margin-bottom: 1.5rem;
+}
+
+.user-info {
+    margin-bottom: 1.5rem;
+}
+
+.user-info h2 {
+    margin-bottom: .5rem;
+}
+
+button {
+    min-width: 120px;
+    padding: .9rem 1.2rem;
+    color: #424242;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(251, 69, 69);
+    cursor: pointer;
+}
